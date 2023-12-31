@@ -9,10 +9,10 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route exact path='/sumadhwa' element={<Home />}></Route>        
-        <Route path='/sumadhwa/about' element={<About/>}></Route>
-        <Route path='/sumadhwa/solutions' element={<Solutions />}></Route>
-        <Route path='/sumadhwa/contact' element={<ContactUs />}></Route>
+        <Route exact path='/' element={<Home />}></Route>        
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/solutions' element={<Solutions />}></Route>
+        <Route path='/contact' element={<ContactUs />}></Route>
       </Routes>
     </div>
       
