@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sumadhwa/static/css/main.5ed94c53.css",
-    "main.js": "/sumadhwa/static/js/main.5c101a15.js",
+    "main.js": "/sumadhwa/static/js/main.e8b4b0c3.js",
     "static/js/787.696d01e1.chunk.js": "/sumadhwa/static/js/787.696d01e1.chunk.js",
     "static/media/manufacturing4.png": "/sumadhwa/static/media/manufacturing4.0a6a242f7a364c237363.png",
     "static/media/factory.png": "/sumadhwa/static/media/factory.3332bbbd77c10fbf2cf5.png",
@@ -71,11 +71,11 @@
     "static/media/productivity-improvements.png": "/sumadhwa/static/media/productivity-improvements.ae001dcd8ab149023e7d.png",
     "index.html": "/sumadhwa/index.html",
     "main.5ed94c53.css.map": "/sumadhwa/static/css/main.5ed94c53.css.map",
-    "main.5c101a15.js.map": "/sumadhwa/static/js/main.5c101a15.js.map",
+    "main.e8b4b0c3.js.map": "/sumadhwa/static/js/main.e8b4b0c3.js.map",
     "787.696d01e1.chunk.js.map": "/sumadhwa/static/js/787.696d01e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ed94c53.css",
-    "static/js/main.5c101a15.js"
+    "static/js/main.e8b4b0c3.js"
   ]
 }
