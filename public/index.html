@@ -53,6 +53,8 @@
       })(window.location);
     </script>
     <script src="main.js"></script>
+    <script src="https://tally.so/widgets/embed.js"></script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -68,27 +70,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      var d = document,
-        w = "https://tally.so/widgets/embed.js",
-        v = function () {
-          "undefined" != typeof Tally
-            ? Tally.loadEmbeds()
-            : d
-                .querySelectorAll(
-                  "iframe[data-tally-src]:not([src])"
-                )
-                .forEach(function (e) {
-                  e.src = e.dataset.tallySrc;
-                });
-        };
-      if ("undefined" != typeof Tally) v();
-      else if (d.querySelector('script[src="' + w + '"]') == null) {
-        var s = d.createElement("script");
-        (s.src = w + "?ts=" + new Date().getTime()),
-          (s.onload = v),
-          (s.onerror = v),
-          d.body.appendChild(s);
-      }
+      // var d = document,
+      //   w = "https://tally.so/widgets/embed.js",
+      //   v = function () {
+      //     "undefined" != typeof Tally
+      //       ? Tally.loadEmbeds()
+      //       : d
+      //           .querySelectorAll(
+      //             "iframe[data-tally-src]:not([src])"
+      //           )
+      //           .forEach(function (e) {
+      //             e.src = e.dataset.tallySrc;
+      //           });
+      //   };
+      // if ("undefined" != typeof Tally) v();
+      // else if (d.querySelector('script[src="' + w + '"]') == null) {
+      //   var s = d.createElement("script");
+      //   (s.src = w + "?ts=" + new Date().getTime()),
+      //     (s.onload = v),
+      //     (s.onerror = v),
+      //     d.body.appendChild(s);
+      // }
     </script>
   </body>
 </html>

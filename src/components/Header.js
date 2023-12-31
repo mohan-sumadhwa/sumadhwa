@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../styles/style.css';
 
@@ -68,30 +69,32 @@ function Header({ active }) {
 	return (
 		<header id="header" className="fixed-top d-flex align-items-center">
 			<div className="container d-flex align-items-center">
+				
 				<div className="logo me-auto">
 					{/* <!-- <h1><a href="index.html">Scaffold</a></h1> --> */}
 					{/* <!-- Uncomment below if you prefer to use an image logo --> */}
+					<Link  to='/'>
 					<div className="row justify-content-start">
 						<div className='col-2'>
-							<a href="">
 								<img src={logo} alt="" className="img-fluid" />
 
 								{/* <!-- <h1><a href="index.html">Sumadhwa</a></h1> --> */}
-							</a>
+							
 						</div>
 						<div className='col-10 logo-title'>
 							<span>Sumadhwa Consultants</span>
 						</div>
 
 					</div>
+					</Link>
 
 				</div>
 
 				<nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbar && 'navbar-mobile'}`}>
 					<ul>
-						<li><a className={"nav-link scrollto " + (active === "home" ? "active" : "")} href="/">Home</a></li>
+						<li><Link className={"nav-link scrollto " + (active === "home" ? "active" : "")} to="/">Home</Link></li>
 						{/* <!-- <li><a className="nav-link scrollto" href="#about">About Us</a></li> --> */}
-						<li><a className={"nav-link scrollto " + (active === "about" ? "active" : "")} href="/about">About</a></li>
+						<li><Link className={"nav-link scrollto " + (active === "about" ? "active" : "")} to="/about">About</Link></li>
 						{/* <li className="dropdown">
             <a href="#" className={"nav-link scrollto " + ((active == "about" || active == "team") ? "active": "")}><span>About</span> <i className="bi bi-chevron-down"></i></a>
             <ul>
@@ -104,10 +107,10 @@ function Header({ active }) {
             </ul>
           </li> */}
 						<li>
-							<a className={"nav-link scrollto " + (active === "solutions" ? "active" : "")} href="/solutions">Solutions</a>
+							<Link className={"nav-link scrollto " + (active === "solutions" ? "active" : "")} to="/solutions">Solutions</Link>
 						</li>
 						<li>
-							<a className={"contact-link nav-link scrollto " + (active === "contact" ? "active" : "")} href="/contact">Contact Us</a>
+							<Link className={"contact-link nav-link scrollto " + (active === "contact" ? "active" : "")} to="/contact">Contact Us</Link>
 						</li>
 					</ul>
 					<i className={`bi ${showNavbar ? "bi-x": "bi-list"} mobile-nav-toggle`} onClick={handleShowNavbar}></i>

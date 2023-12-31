@@ -1,17 +1,24 @@
 import Header from './Header';
 import '../styles/style.css';
 import Footer from './Footer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function ContactUs() {
 
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        if (window.Tally) {
+            window.Tally.loadEmbeds();
+        }
+    }, [])
+    
+
     const spinner = () => {
         return (
             <div className='spinner center'>
-                <div class="spinner-border text-primary" role="status">
-                    <span class="sr-only">Loading...</span>
+                <div className="spinner-border text-primary" role="status">
+                    <span className="sr-only">Loading...</span>
                 </div>                
             </div>
         )
@@ -49,7 +56,7 @@ function ContactUs() {
                         <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-stretch">
                             <div className="info">
                                 <div className="address">
-                                    <i class="fa-solid fa-location-dot"></i>
+                                    <i className="fa-solid fa-location-dot"></i>
                                     <h4>Location</h4>
                                     <p>
                                         #699 11th Cross, Padmanabhanagar <br />
