@@ -1,13 +1,12 @@
 import Header from './Header';
 import '../styles/style.css';
 import Footer from './Footer';
-import SolutionsCard from './SolutionsCard';
 
 function Solutions() {
 	return (
 		<div>
 			<Header active="solutions"></Header>
-			<section className='hero solutions-hero'>
+			<section className='hero solutions-bg'>
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-8 order-1 order-lg-2 d-flex flex-column justify-content-center">

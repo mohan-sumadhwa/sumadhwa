@@ -1,15 +1,15 @@
-import Header from './Header';
-import '../styles/style.css';
-import Footer from './Footer';
-import Team from './Team';
-import Card from './Card';
-import HorizontalCard from './HorizontalCard';
+import Header from "./Header";
+import "../styles/style.css";
+import Footer from "./Footer";
+import Team from "./Team";
+import Card from "./Card";
+import HorizontalCard from "./HorizontalCard";
 
 // images
-import dataDrivenImg from '../images/about/data-driven-free.jpg';
-import collaborationImg from '../images/about/collaboration-free.jpg';
-import peopleCentricImg from '../images/about/people-centric-free.webp';
-import techPartnerImg from '../images/about/tech-partnership-free.jpg';
+import dataDrivenImg from "../images/about/data-driven-free.jpg";
+import collaborationImg from "../images/about/collaboration-free.jpg";
+import peopleCentricImg from "../images/about/people-centric-free.webp";
+import techPartnerImg from "../images/about/tech-partnership-free.jpg";
 
 function About() {
     return (
@@ -20,17 +20,35 @@ function About() {
                     <div className="container bg-white">
                         <h1 className="mb-4 page-title">Who we are</h1>
                         <p>
-                            Sumadhwa, drawing inspiration from Sanskrit's essence of dedication, embodies our ethos at Sumadhwa Consultants. As a united force, we're a team of seasoned professionals with over 25 years of collective experience in a leading automotive MNC, specializing across Manufacturing Process, Production, Maintenance, Quality, Automation, and EHS. Our proficiency extends to leveraging the latest IT advancements, strategically optimizing operational processes.
+                            Sumadhwa, drawing inspiration from Sanskrit's essence of
+                            dedication, embodies our ethos at Sumadhwa Consultants. As a
+                            united force, we're a team of seasoned professionals with over 25
+                            years of collective experience in a leading automotive MNC,
+                            specializing across Manufacturing Process, Production,
+                            Maintenance, Quality, Automation, and EHS. Our proficiency extends
+                            to leveraging the latest IT advancements, strategically optimizing
+                            operational processes.
                         </p>
                         <p>
-                            Our commitment lies in the depth of understanding the dynamic challenges that the manufacturing industry faces. We tirelessly strive to deliver tailored solutions that elevate efficiency, drive cost reduction, and nurture sustainable growth. United by a shared goal, we aspire to enable manufacturing excellence through insightful consulting.
+                            Our commitment lies in the depth of understanding the dynamic
+                            challenges that the manufacturing industry faces. We tirelessly
+                            strive to deliver tailored solutions that elevate efficiency,
+                            drive cost reduction, and nurture sustainable growth. United by a
+                            shared goal, we aspire to enable manufacturing excellence through
+                            insightful consulting.
                         </p>
                         <p>
-                            At Sumadhwa, each team member contributes a wealth of knowledge and expertise, collectively forming a powerhouse of skills. This collaborative strength allows us to navigate intricacies with precision and offer holistic solutions. We recognize the importance of addressing the unique needs of our clients, ensuring that our consulting approach is not just insightful but also results-driven.
+                            At Sumadhwa, each team member contributes a wealth of knowledge
+                            and expertise, collectively forming a powerhouse of skills. This
+                            collaborative strength allows us to navigate intricacies with
+                            precision and offer holistic solutions. We recognize the
+                            importance of addressing the unique needs of our clients, ensuring
+                            that our consulting approach is not just insightful but also
+                            results-driven.
                         </p>
-                        <p>
+                        {/* <p>
                             In essence, Sumadhwa Consultants stands as a beacon of dedication, experience, and innovation, ready to guide businesses towards a future of manufacturing excellence
-                        </p>
+                        </p> */}
                     </div>
                 </section>
 
@@ -77,8 +95,8 @@ function About() {
                 </section>
 
                 <section id="approach">
-                    <div className='container'>
-                        <div className='section-title'>
+                    <div className="container">
+                        <div className="section-title">
                             <h2>Our Approach</h2>
                         </div>
                         <HorizontalCard
@@ -86,31 +104,26 @@ function About() {
                             imgSrc={dataDrivenImg}
                             description="Our strategies are backed by thorough data analysis, enabling informed decision-making at every level of your organization.
                     Our team turns complex information into easy-to-understand solutions, helping your business run smoother and make smart moves."
-                        >
-                        </HorizontalCard>
+                        ></HorizontalCard>
 
                         <HorizontalCard
                             title="Collaborative Consulting"
                             imgSrc={collaborationImg}
                             description="We work closely with your team to understand your unique challenges and opportunities, ensuring that our solutions are aligned with your business goals and bring resilience in an increasingly competitive global market."
-                        >
-                        </HorizontalCard>
+                        ></HorizontalCard>
 
                         <HorizontalCard
                             title="People Centric Solutions"
                             imgSrc={peopleCentricImg}
                             description="We believe in empowering your workforce. Our approach involves not just optimizing processes but also fostering a culture of continuous improvement among your teams and driving innovation and adaptability."
-                        >
-                        </HorizontalCard>
+                        ></HorizontalCard>
 
                         <HorizontalCard
                             title="Technological Partnership"
                             imgSrc={techPartnerImg}
                             description="From automation to data analytics, we leverage the latest advancements to enhance your operations and drive sustained success partnering with Technology Solution providers"
-                        >
-                        </HorizontalCard>
+                        ></HorizontalCard>
                     </div>
-
                 </section>
             </div>
             <Team></Team>
