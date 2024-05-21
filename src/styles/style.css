@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	/* font-family: "Open Sans", sans-serif; */
+	font-family: "Open Sans", sans-serif;
 	color: #444444;
 	height: 100%;
 }
@@ -58,7 +58,6 @@ h6 {
 	line-height: 0;
 	font-weight: 600;
 	letter-spacing: 1px;
-	font-family: "Open Sans", sans-serif;
 }
 
 #header .logo h1 a,
@@ -104,6 +103,26 @@ h6 {
 
 .navbar li {
 	position: relative;
+	margin: 0 3px;
+}
+
+.navbar li .main-link:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: blue; /* Underline color */
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	transition: width 0.3s ease; 
+}
+
+.navbar li .main-link:hover:after {
+	width: 100%; /* Full width on hover */
+}
+.navbar li .active:after{
+	width: 100%;
 }
 
 .navbar a,
@@ -111,7 +130,7 @@ h6 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 0 10px 30px;
+	padding: 10px 12px 10px 12px;
 	font-size: 17px;
 	font-family: sans-serif;
 	color: black;
@@ -130,7 +149,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-	color: #0d47a1;
+	/* color: #0d47a1; */
 }
 
 .navbar .dropdown ul {
@@ -200,7 +219,9 @@ h6 {
 @media screen and (min-width: 992px) {
 	.navbar .contact-link {
 		color: white !important;
-		background-color: #0d47a1;
+		
+		background: linear-gradient(90deg, #3f51b5, #1a237e);
+		border-radius: 8px;
 		padding: 8px 15px;
 		margin: 0 20px;
 		font-size: 15px;
@@ -336,6 +357,37 @@ h6 {
 		url("../images/factory.png");
 }
 
+.process-optimization-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/factory.png");
+}
+
+.technological-solutions-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/services/robot-machine.jpg");
+}
+
+.about-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/about/clay-banks-LjqARJaJotc-unsplash.jpg");
+}
+
+.sustainability-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/services/windmill.jpg");
+}
+
+.contact-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../images/contact-us/hello-on-phone.jpg");
+}
+
+.contact-us-bar-bg{
+	
+	background: linear-gradient(90deg, #3f51b5, #1a237e);
+	color: white;
+}
+
 .hero {
 	width: 100%;
 	background-repeat: no-repeat;
@@ -344,11 +396,12 @@ h6 {
 	background-size: 100%;
 	margin-top: 60px;
 	padding: 60px 0;
-	min-height: 400px;
+	min-height: 500px;
+	text-align: center;
 }
 
 .hero h1 {
-	margin: 0 0 20px 0;
+	margin: 80px 0 20px 0;
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 56px;
@@ -359,10 +412,6 @@ h6 {
 	color: white;
 	margin-bottom: 30px;
 	font-size: 24px;
-}
-
-.hero .btn-get-started:hover {
-	background: #008bd1;
 }
 
 .hero .hero-img {
@@ -417,8 +466,8 @@ section {
 	overflow: hidden;
 }
 
-.section-bg {
-	background-color: #f7f8f9;
+.grey-bg {
+	background-color: #eeeeee !important;
 }
 
 .section-title {
@@ -438,6 +487,31 @@ section {
 .section-title p {
 	margin-bottom: 0;
 }
+
+.my-btn{
+	background: linear-gradient(90deg, #f44336, #b71c1c);
+	font-weight: 600;
+	font-size: large;
+	padding: 8px 10px;
+	border-radius: 8px;
+	outline: none;
+}
+
+.my-btn:hover{
+	background: none;
+	background-color: #d32f2f;
+	/* border: 1px solid; */
+}
+
+.my-btn:focus{
+	/* outline: none; */
+}
+
+my-btn:active{
+	background-color: #d32f2f;
+	border: 1px solid;
+}
+
 
 /*--------------------------------------------------------------
 # About
@@ -479,6 +553,8 @@ section {
 	margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Cards
 --------------------------------------------------------------*/
@@ -489,7 +565,7 @@ section {
 	/* margin: 0; */
 	background: #fff;
 	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-	transition: all 0.2s ease-in-out;
+	/* transition: all 0.3s ease-in-out; */
 	/* border-radius: 4px; */
 	text-align: center;
 	/* border-bottom: 3px solid #fff; */
@@ -510,7 +586,7 @@ section {
 .cards .title {
 	font-weight: 700;
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .cards .title a {
@@ -519,7 +595,7 @@ section {
 
 .cards .description {
 	font-size: 15px;
-	line-height: 28px;
+	line-height: 26px;
 	padding: 0 30px;
 	margin-bottom: 30px;
 }
@@ -561,7 +637,7 @@ ul {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: rgba(255, 255, 255, 0.75);
+	/* background: rgba(255, 255, 255, 0.75); */
 	z-index: 9;
 }
 
@@ -570,13 +646,19 @@ ul {
 	z-index: 10;
 }
 
+.team img{
+	width: 100%;
+}
+
 .team .member {
 	text-align: center;
 	margin-bottom: 80px;
 	position: relative;
+	width: 100%;
 }
 
 .team .member .pic {
+	width: 100%;
 	overflow: hidden;
 }
 
@@ -651,12 +733,19 @@ ul {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info {
 	padding: 30px;
 	background: #fff;
 	width: 100%;
 	border: 2px solid #e9ecee;
 	border-radius: 4px;
+}
+
+.contact .tally-form{
+	/* border: 2px solid #e9ecee;
+	border-radius: 4px; */
+
 }
 
 .contact .info i {
@@ -751,7 +840,7 @@ ul {
 	/* margin: 0; */
 	transition: all 0.3s ease-in-out;
 	border-radius: 10px;
-	margin: 20px 0;
+	/* margin: 20px 0; */
 	padding: 5px;
 }
 
@@ -784,6 +873,7 @@ i {
 	margin: auto;
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 
 .horizontal-card {
@@ -791,7 +881,15 @@ i {
 	padding: 20px 0;
 }
 
+.horizontal-card .description {
+	line-height: 1.8;
+}
+
 @media screen and (max-width: 991px) {
+	.horizontal-card img{
+		margin-top: 10px;
+	}
+
 	.horizontal-card {
 		padding: 0 !important;
 	}

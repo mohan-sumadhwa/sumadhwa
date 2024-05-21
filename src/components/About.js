@@ -15,6 +15,20 @@ function About() {
     return (
         <div>
             <Header active="about"></Header>
+            <section className='hero about-bg'>
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12 order-1 order-lg-2 d-flex flex-column">
+							<div>
+								<h1>
+									Our Story
+								</h1>
+								<h2>True to Profession</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
             <div className="about">
                 <section id="who-we-are" className="who-we-are">
                     <div className="container bg-white">
@@ -52,7 +66,7 @@ function About() {
                     </div>
                 </section>
 
-                <section id="guiding-lights" className="section-bg">
+                <section id="guiding-lights" className="grey-bg">
                     <div className="container">
                         <div className="cards">
                             <div className="row center">
@@ -121,7 +135,7 @@ function About() {
                         <HorizontalCard
                             title="Technological Partnership"
                             imgSrc={techPartnerImg}
-                            description="From automation to data analytics, we leverage the latest advancements to enhance your operations and drive sustained success partnering with Technology Solution providers"
+                            description="From automation to data analytics, we leverage the latest advancements to enhance your operations and drive sustained success partnering with technology solution providers."
                         ></HorizontalCard>
                     </div>
                 </section>

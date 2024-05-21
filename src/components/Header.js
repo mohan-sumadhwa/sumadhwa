@@ -28,7 +28,7 @@ function Header({ active }) {
 	// 			return document.querySelector(el)
 	// 		}
 	// 	}
-	
+
 	// 	/**
 	// 	 * Easy event listener function
 	// 	 */
@@ -42,7 +42,7 @@ function Header({ active }) {
 	// 			}
 	// 		}
 	// 	}
-	
+
 	// 	/**
 	// 	 * Mobile nav toggle
 	// 	 */
@@ -53,7 +53,7 @@ function Header({ active }) {
 	// 		this.classList.toggle('bi-x')
 	// 		console.log('Done');
 	// 	})
-	
+
 	// 	/**
 	// 	 * Mobile nav dropdowns activate
 	// 	 */
@@ -64,56 +64,60 @@ function Header({ active }) {
 	// 	//   }
 	// 	// }, true)
 	// })
-	
+
 
 	return (
 		<header id="header" className="fixed-top d-flex align-items-center">
 			<div className="container d-flex align-items-center">
-				
+
 				<div className="logo me-auto">
 					{/* <!-- <h1><a href="index.html">Scaffold</a></h1> --> */}
 					{/* <!-- Uncomment below if you prefer to use an image logo --> */}
-					<Link  to='/'>
-					<div className="row justify-content-start">
-						<div className='col-2'>
+					<Link to='/'>
+						<div className="row justify-content-start">
+							<div className='col-2'>
 								<img src={logo} alt="" className="img-fluid" />
 
 								{/* <!-- <h1><a href="index.html">Sumadhwa</a></h1> --> */}
-							
-						</div>
-						<div className='col-10 logo-title'>
-							<span>Sumadhwa Consultants</span>
-						</div>
 
-					</div>
+							</div>
+							<div className='col-10 logo-title'>
+								<span>Sumadhwa Consultants</span>
+							</div>
+
+						</div>
 					</Link>
 
 				</div>
 
 				<nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbar && 'navbar-mobile'}`}>
 					<ul>
-						<li><Link className={"nav-link scrollto " + (active === "home" ? "active" : "")} to="/">Home</Link></li>
+						<li><Link className={"nav-link main-link  scrollto " + (active === "home" ? "active" : "")} to="/">Home</Link></li>
 						{/* <!-- <li><a className="nav-link scrollto" href="#about">About Us</a></li> --> */}
-						<li><Link className={"nav-link scrollto " + (active === "about" ? "active" : "")} to="/about">About</Link></li>
-						{/* <li className="dropdown">
-            <a href="#" className={"nav-link scrollto " + ((active == "about" || active == "team") ? "active": "")}><span>About</span> <i className="bi bi-chevron-down"></i></a>
-            <ul>
-              <li>
-                <a className={"nav-link scrollto " + (active === "about"? "active": "")} href="/about">Why Sumadhwa</a>
-              </li>
-              <li>
-                <a className={"nav-link scrollto " + (active === "team"? "active": "")} href="/team">Core Team</a>
-              </li>
-            </ul>
-          </li> */}
+						<li><Link className={"nav-link main-link scrollto " + (active === "about" ? "active" : "")} to="/about">About Us</Link></li>
+
 						<li>
-							<Link className={"nav-link scrollto " + (active === "solutions" ? "active" : "")} to="/solutions">Solutions</Link>
+							{/* <Link className={"nav-link scrollto " + (active === "solutions" ? "active" : "")} to="/solutions">Services</Link> */}
+							<li className="dropdown">
+								<Link to="/services" className={"nav-link main-link scrollto " + (active === "services" ? "active" : "")}><span>Services</span> <i className="bi bi-chevron-down"></i></Link>
+								<ul>
+									<li>
+										<Link className={"nav-link scrollto " + (active === "about" ? "active" : "")} to="/services/process-optimization">Process Optimization</Link>
+									</li>
+									<li>
+										<Link className={"nav-link scrollto " + (active === "team" ? "active" : "")} to="/services/technological-solutions">Technological Solutions</Link>
+									</li>
+									<li>
+										<Link className={"nav-link scrollto " + (active === "team" ? "active" : "")} to="/services/sustainability">Sustainability</Link>
+									</li>
+								</ul>
+							</li>
 						</li>
 						<li>
-							<Link className={"contact-link nav-link scrollto " + (active === "contact" ? "active" : "")} to="/contact">Contact Us</Link>
+							<Link className={"contact-link scrollto " + (active === "contact" ? "active" : "")} to="/contact">Contact Us</Link>
 						</li>
 					</ul>
-					<i className={`bi ${showNavbar ? "bi-x": "bi-list"} mobile-nav-toggle`} onClick={handleShowNavbar}></i>
+					<i className={`bi ${showNavbar ? "bi-x" : "bi-list"} mobile-nav-toggle`} onClick={handleShowNavbar}></i>
 				</nav>
 			</div>
 		</header>

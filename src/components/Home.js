@@ -2,6 +2,8 @@ import Footer from './Footer';
 import Header from './Header';
 import Card from './Card';
 import '../styles/style.css';
+import ContactUsBar from './ContactUsBar';
+import MyButton from './MyButton';
 
 function Home() {
 	return (
@@ -10,7 +12,7 @@ function Home() {
 			<section className='hero home-bg'>
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-8 order-1 order-lg-2 d-flex flex-column justify-content-center">
+						<div className="col-lg-12 order-1 order-lg-2 d-flex flex-column justify-content-center">
 							<div>
 								<h1>
 									Enabling manufacturing excellence through insightful consulting
@@ -24,17 +26,21 @@ function Home() {
 			</section>
 
 			<main id="main">
-				<section id="intro" className="section-bg">
-					<div className="container">
-						<div className="intro-text">
+				<section id="intro" className="">
+					<div className="container center">
+						<div className="intro-text mb-5">
 							We are eager to formally introduce our innovative IT-enabled
 							professional services in Manufacturing Engineering Consulting, with
 							a primary focus on “Manufacturing Excellence.”
+
 						</div>
+
+						<MyButton link={"/about"} text={"Know More About Us"}></MyButton>
+
 					</div>
 				</section>
 
-				<section id="why-choose-us" className="why-choose-us">
+				<section id="why-choose-us" className="why-choose-us grey-bg">
 					<div className="container">
 						<div className="cards">
 							<div className="row center">
@@ -78,11 +84,10 @@ function Home() {
 				</section>
 
 
-				<section id="services" className="cards section-bg">
+				{/* <section id="services" className="cards grey-bg">
 					<div className="container">
 						<div className="section-title">
 							<h2>Our Services</h2>
-							{/* <!-- <p>TODO</p> --> */}
 						</div>
 						<div className="row service">
 							<div className="col-lg-6 col-md-12">
@@ -130,7 +135,67 @@ function Home() {
 						</div>
 
 					</div>
+				</section> */}
+
+
+				<section id="services" className="">
+					<div className="container">
+						<div className="section-title">
+							<h2>Our Services</h2>
+						</div>
+						
+						<div className='row service'>
+							<div className='col-lg-7 col-md-7 col-sm-12'>
+								<div className='row my-4'>
+									<div className='col-2 service-icon'>
+										<img src={require("../images/home/process-optimization-icon.png")}></img>
+									</div>
+									<div className='col'>
+										<h4>Process Optimization</h4>
+										<p>We optimize production by streamlining processes for higher throughput, embrace lean manufacturing
+									to minimize waste, and employ special treatments for precision component
+									manufacturing.</p>
+										<MyButton link={"/services/process-optimization"} text="Learn More"></MyButton>
+									</div>
+								</div>
+								<hr></hr>
+								<div className='row my-4'>
+									<div className='col-2 service-icon'>
+										<img src={require("../images/home/technological-solutions-icon.png")}></img>
+									</div>
+									<div className='col'>
+										<h4>Tecnological Solutions</h4>
+										<p>We seamlessly incorporate Industry 4.0 technologies, such as IoT and robotics, to automate and elevate manufacturing processes. </p>
+										<MyButton link={"/services/technological-solutions"} text="Learn More"></MyButton>
+									</div>
+								</div>
+
+								<hr></hr>
+								<div className='row my-4'>
+									<div className='col-2 service-icon'>
+										<img src={require("../images/home/sustainability-icon.png")}></img>
+									</div>
+									<div className='col'>
+										<h4>Sustainability</h4>
+										<p>We contribute to eco-friendly manufacturing, provide guidance on environmental compliance, and conduct EHS audits for certification.</p>
+										<MyButton link={"/services/sustainability"} text="Learn More"></MyButton>
+									</div>
+								</div>
+
+								<hr></hr>
+							</div>
+
+							<div className='col-lg-5 col-md-5 col-sm-12'>
+
+								<img src={require("../images/home/man-with-laptop.jpg")}></img>
+							</div>
+
+						</div>
+						
+
+					</div>
 				</section>
+				<ContactUsBar></ContactUsBar>
 				<Footer></Footer>
 			</main>
 		</div>
