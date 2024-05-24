@@ -26,12 +26,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>Nagaraj Banaji</h4>
                                     <span>Lead Consultant</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -48,12 +48,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>Srinivas N</h4>
                                     <span>Principal Consultant Process Management</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -70,12 +70,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>Suresh Katti</h4>
                                     <span>Principal Consultant Production Management</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -91,12 +91,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>Mohan K V</h4>
                                     <span>Principal Consultant Automation</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -112,12 +112,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>Venu B V</h4>
                                     <span>Principal Consultant Quality Management</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -133,12 +133,12 @@ function Team() {
                                 <div className="member-info">
                                     <h4>P C Kemkar </h4>
                                     <span>Principal Consultant EHS Management</span>
-                                    <div className="social">
+                                    {/* <div className="social">
                                         <a href=""><i className="bi bi-twitter"></i></a>
                                         <a href=""><i className="bi bi-facebook"></i></a>
                                         <a href=""><i className="bi bi-instagram"></i></a>
                                         <a href=""><i className="bi bi-linkedin"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

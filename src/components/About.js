@@ -23,7 +23,7 @@ function About() {
 								<h1>
 									Our Story
 								</h1>
-								<h2>True to Profession</h2>
+								<h2>Passion in Every Detail</h2>
 							</div>
 						</div>
 					</div>
@@ -123,7 +123,7 @@ function About() {
                         <HorizontalCard
                             title="Collaborative Consulting"
                             imgSrc={collaborationImg}
-                            description="We work closely with your team to understand your unique challenges and opportunities, ensuring that our solutions are aligned with your business goals and bring resilience in an increasingly competitive global market."
+                            description="We work closely with your team to understand unique challenges and opportunities, ensuring that solutions are aligned with your business goals and bring resilience in an increasingly competitive global market."
                         ></HorizontalCard>
 
                         <HorizontalCard

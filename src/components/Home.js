@@ -138,12 +138,12 @@ function Home() {
 				</section> */}
 
 
-				<section id="services" className="">
+				<section id="solutions" className="">
 					<div className="container">
 						<div className="section-title">
 							<h2>Our Services</h2>
 						</div>
-						
+
 						<div className='row service'>
 							<div className='col-lg-7 col-md-7 col-sm-12'>
 								<div className='row my-4'>
@@ -152,7 +152,7 @@ function Home() {
 									</div>
 									<div className='col'>
 										<h4>Process Optimization</h4>
-										<p>We optimize production by streamlining processes for higher throughput, embrace lean manufacturing
+										<p className='mb-4'>We optimize production by streamlining processes for higher throughput, embrace lean manufacturing
 									to minimize waste, and employ special treatments for precision component
 									manufacturing.</p>
 										<MyButton link={"/services/process-optimization"} text="Learn More"></MyButton>
@@ -165,7 +165,7 @@ function Home() {
 									</div>
 									<div className='col'>
 										<h4>Tecnological Solutions</h4>
-										<p>We seamlessly incorporate Industry 4.0 technologies, such as IoT and robotics, to automate and elevate manufacturing processes. </p>
+										<p className='mb-4'>We seamlessly incorporate Industry 4.0 technologies, such as IoT and robotics, to automate and elevate manufacturing processes. </p>
 										<MyButton link={"/services/technological-solutions"} text="Learn More"></MyButton>
 									</div>
 								</div>
@@ -177,7 +177,7 @@ function Home() {
 									</div>
 									<div className='col'>
 										<h4>Sustainability</h4>
-										<p>We contribute to eco-friendly manufacturing, provide guidance on environmental compliance, and conduct EHS audits for certification.</p>
+										<p className='mb-4'>We contribute to eco-friendly manufacturing, provide guidance on environmental compliance, and conduct EHS audits for certification.</p>
 										<MyButton link={"/services/sustainability"} text="Learn More"></MyButton>
 									</div>
 								</div>
@@ -185,13 +185,11 @@ function Home() {
 								<hr></hr>
 							</div>
 
-							<div className='col-lg-5 col-md-5 col-sm-12'>
-
+							<div className='solutions-img col-lg-5 col-md-5 col-sm-12'>
 								<img src={require("../images/home/man-with-laptop.jpg")}></img>
 							</div>
 
-						</div>
-						
+						</div>		
 
 					</div>
 				</section>

@@ -40,8 +40,8 @@ function ContactUs() {
 					</div>
                 </div>
             </section>
-            <section id="contact" className="contact mb-py-5">
-                <div className="container mt-5 bg-white">
+            <section id="contact" className="contact  grey-bg ">
+                <div className="">
                     {/* <h1 className="mb-3 page-title">Contact Us</h1> */}
                     {/* <div className="row mb-5 contact-us-text">
                         Ready to elevate your manufacturing operations? <br />
@@ -49,49 +49,53 @@ function ContactUs() {
                         guide you towards manufacturing excellence.
                     </div> */}
                     <div className="row">
-                        <div className="col-lg-5 col-md-5 col-sm-12 d-flex align-items-stretch">
-                            <div className="info">
+                        <div className="col-lg-5 col-md-12 col-sm-12 d-flex align-items-stretch px-5 mt-4">
+                            <div className="info mt-2 px-3 py-5">
                                 <div className="address">
                                     <i className="fa-solid fa-location-dot"></i>
-                                    <h4>Location</h4>
-                                    <p>
+                                    <h4>Address</h4>
+                                    <p className='text'>
                                         #699 11th Cross, Padmanabhanagar <br />
-                                        Bengaluru - 560 070
+                                        Bengaluru - 560 070 <br />
+                                        Karnataka
                                     </p>
                                 </div>
+                                <hr/>
 
                                 <div className="email">
                                     <i className="fa-solid fa-envelope"></i>
                                     <h4>Email</h4>
-                                    <p>
-                                        nagarj.banaji2@gmail.com <br />
-                                        mohankellangere@gmail.com
+                                    <p className='text'>
+                                        info@sumadhwaconsultants.com <br />
                                     </p>
                                 </div>
+                                <hr/>
 
                                 <div className="phone">
                                     <i className="fa-solid fa-phone"></i>
                                     <h4>Phone</h4>
-                                    <p>
+                                    <p className='text'>
                                         98801 01449 <br />
                                         98450 06706
                                     </p>
                                 </div>
+                                {/* <hr/> */}
 
                                 {/* <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> --> */}
                             </div>
                         </div>
-                        <div className="tally-form col-lg-7 col-md-7 col-sm-12 mb-5">
-                            <div className="row">
-                                <div className="col-lg-10 col-md-10 col-sm-12">
+                        <div className="tally-form col-lg-6 col-md-12 col-sm-12 my-4 bg-white">
+                            <div className="row justify-content-center">
+                                {/* <div className='col-lg-2 col-md-2'></div> */}
+                                <div className="col-lg-10 col-md-10 col-sm-12 p-4">
                                     {loading ? spinner() :
                                         <div>
-                                            <h2 className='mt-2'>Get In Touch</h2>
-                                            <p className='mb-4'>Glad you liked our services. We would love to hear from you!</p>
+                                            <h5 className='my-4'>We would love to hear from you. Fill out the form below.</h5>
+                                            {/* <p className='mb-4'>Glad you liked our services. We would love to hear from you!</p> */}
                                         </div>
                                     }
                                     <iframe
-                                        data-tally-src="https://tally.so/embed/3xJAXd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                                        data-tally-src="https://tally.so/embed/mYZE6N?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
                                         loading="lazy"
                                         width="100%"
                                         height="276"
