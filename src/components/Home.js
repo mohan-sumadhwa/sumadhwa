@@ -7,7 +7,7 @@ import MyButton from './MyButton';
 
 function Home() {
 	return (
-		<div>
+		<div className='home-page'>
 			<Header active="home"></Header>
 			<section className='hero home-bg'>
 				<div className="container">
@@ -83,61 +83,6 @@ function Home() {
 					</div>
 				</section>
 
-
-				{/* <section id="services" className="cards grey-bg">
-					<div className="container">
-						<div className="section-title">
-							<h2>Our Services</h2>
-						</div>
-						<div className="row service">
-							<div className="col-lg-6 col-md-12">
-								<div className="services-img">
-									<img src={require("../images/home/optimization.jpeg")} alt="" />
-								</div>
-							</div>
-							<div className="col-lg-6 col-md-12 description">
-								<h2 className="mb-4">Process Optimization</h2>
-								<p>
-									We optimize production by streamlining processes for higher throughput, embrace lean manufacturing
-									to minimize waste, and employ special treatments like heat and surface treatments for precision component
-									manufacturing, introducing innovative approaches.
-								</p>
-							</div>
-						</div>
-
-						<div className="row service">
-
-							<div className="col-lg-6 col-md-12 description">
-								<h2 className="mb-4">Technogical Solutions</h2>
-								<p>
-									We seamlessly incorporate Industry 4.0 technologies, such as IoT and robotics, to automate and elevate manufacturing processes. Our smart manufacturing solutions ensure real-time monitoring and control, fostering efficiency and innovation in the rapidly evolving landscape of industrial automation.
-								</p>
-							</div>
-							<div className="col-lg-6 col-md-12">
-								<div className="services-img">
-									<img src={require("../images/home/tech-solutions.jpg")} alt="" />
-								</div>
-							</div>
-						</div>
-
-						<div className="row service">
-							<div className="col-lg-6 col-md-12">
-								<div className="services-img">
-									<img src={require("../images/home/sustainability.jpg")} alt="" />
-								</div>
-							</div>
-							<div className="col-lg-6 col-md-12 description">
-								<h2 className="mb-4">Sustainability</h2>
-								<p>
-									We contribute to eco-friendly manufacturing, provide guidance on environmental compliance, and conduct EHS audits for certification, fostering sustainable practices and ensuring adherence to regulatory standards.
-								</p>
-							</div>
-						</div>
-
-					</div>
-				</section> */}
-
-
 				<section id="solutions" className="">
 					<div className="container">
 						<div className="section-title">
@@ -148,7 +93,7 @@ function Home() {
 							<div className='col-lg-7 col-md-7 col-sm-12'>
 								<div className='row my-4'>
 									<div className='col-2 service-icon'>
-										<img src={require("../images/home/process-optimization-icon.png")}></img>
+										<img alt='Process Optimization Gear Icon' src={require("../images/home/process-optimization-icon.png")}></img>
 									</div>
 									<div className='col'>
 										<h4>Process Optimization</h4>
@@ -161,7 +106,7 @@ function Home() {
 								<hr></hr>
 								<div className='row my-4'>
 									<div className='col-2 service-icon'>
-										<img src={require("../images/home/technological-solutions-icon.png")}></img>
+										<img alt='Technological Solutions Computer Icon' src={require("../images/home/technological-solutions-icon.png")}></img>
 									</div>
 									<div className='col'>
 										<h4>Tecnological Solutions</h4>
@@ -173,7 +118,7 @@ function Home() {
 								<hr></hr>
 								<div className='row my-4'>
 									<div className='col-2 service-icon'>
-										<img src={require("../images/home/sustainability-icon.png")}></img>
+										<img alt='Sustainability Recycle Icon' src={require("../images/home/sustainability-icon.png")}></img>
 									</div>
 									<div className='col'>
 										<h4>Sustainability</h4>
@@ -186,7 +131,7 @@ function Home() {
 							</div>
 
 							<div className='solutions-img col-lg-5 col-md-5 col-sm-12'>
-								<img src={require("../images/home/man-with-laptop.jpg")}></img>
+								<img alt='Man Working on a Laptop' src={require("../images/home/man-with-laptop.jpg")}></img>
 							</div>
 
 						</div>		

@@ -30,11 +30,9 @@ function Header({ active }) {
 	useEffect(() => {
 
 		on('click', '.mobile-nav-toggle', function(e) {
-			console.log('Clicked');
 			select('#navbar').classList.toggle('navbar-mobile')
 			this.classList.toggle('bi-list')
 			this.classList.toggle('bi-x')
-			console.log('Done');
 		  })
 		
 		on('click', '.navbar .dropdown > a', function (e) {
@@ -56,19 +54,20 @@ function Header({ active }) {
 		<header id="header" className="fixed-top d-flex align-items-center">
 			<div className="container d-flex align-items-center">
 
-				<div className="logo me-auto">
+				<div className="row logo me-auto">
 					{/* <!-- <h1><a href="index.html">Scaffold</a></h1> --> */}
 					{/* <!-- Uncomment below if you prefer to use an image logo --> */}
 					<Link to='/'>
-						<div className="row justify-content-start">
-							<div className='col-2'>
-								<img src={logo} alt="" className="img-fluid" />
+						<div className="">
+							<div className='logo-img inline-block p-2'>
+								<img src={logo} alt="Sumadhwa Logo" className="img-fluid inline-block" />
 
 								{/* <!-- <h1><a href="index.html">Sumadhwa</a></h1> --> */}
 
 							</div>
-							<div className='col-10 logo-title'>
-								<span>Sumadhwa Consultants</span>
+							<div className='logo-title inline-block'>
+								<div className='title'>Sumadhwa Consultants</div>
+								<div className='caption px-1'>Manufacturing Consulting Services</div>
 							</div>
 
 						</div>
@@ -83,7 +82,7 @@ function Header({ active }) {
 
 						<li>
 							<li className="dropdown">
-								<Link to="/services" className={"nav-link main-link scrollto " + (active === "services" ? "active" : "")}><span>Services</span> <i className="bi bi-chevron-down"></i></Link>
+								<Link to="/#" className={"nav-link main-link scrollto " + (active === "services" ? "active" : "")}><span>Services</span> <i className="bi bi-chevron-down"></i></Link>
 								<ul>
 									<li>
 										<Link className={"nav-link scrollto dropdown-link" + (active === "about" ? "active" : "")} to="/services/process-optimization">Process Optimization</Link>

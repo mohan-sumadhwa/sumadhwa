@@ -1,3 +1,16 @@
+/*--------------------------------------------------------------
+# Common styles
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'),
+		url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+	font-display: swap;
+}
+
 html {
 	height: 100%;
 }
@@ -10,6 +23,34 @@ body {
 
 .center {
 	text-align: center;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+
+.my-btn {
+	background: linear-gradient(90deg, #f44336, #b71c1c);
+	font-weight: 600;
+	font-size: large;
+	padding: 8px 10px;
+	border-radius: 8px;
+	outline: none;
+}
+
+.my-btn:hover {
+	background: none;
+	background-color: #d32f2f;
+}
+
+.my-btn:active {
+	background-color: #d32f2f;
+	border: 1px solid;
+}
+
+.page-title {
+	font-weight: 600;
 }
 
 ul,
@@ -70,17 +111,35 @@ h6 {
 	padding: 0;
 	margin: 0;
 	max-height: 40px;
+	text-align: end;
 }
 
 #header .logo {
-	min-width: 300px;
+	min-width: 400px;
+}
+
+#header .logo-img {
+	margin: auto;
 }
 
 #header .logo-title {
 	padding: 0;
 	color: #01257D;
-	font-size: large;
 	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+#header .logo-title .title {
+
+	font-size: 22px;
+	font-weight: 600;
+}
+
+#header .logo-title .caption {
+	font-weight: 500;
+	font-size: 12px;
+	font-style: italic;
+
 }
 
 /*--------------------------------------------------------------
@@ -106,22 +165,25 @@ h6 {
 	margin: 0 3px;
 }
 
-.navbar li .main-link:after{
+.navbar li .main-link:after {
 	content: '';
 	display: block;
 	width: 0;
 	height: 3px;
-	background-color: blue; /* Underline color */
+	background-color: blue;
+	/* Underline color */
 	position: absolute;
 	bottom: -2px;
 	left: 0;
-	transition: width 0.3s ease; 
+	transition: width 0.3s ease;
 }
 
 .navbar li .main-link:hover:after {
-	width: 100%; /* Full width on hover */
+	width: 100%;
+	/* Full width on hover */
 }
-.navbar li .active:after{
+
+.navbar li .active:after {
 	width: 100%;
 }
 
@@ -143,13 +205,6 @@ h6 {
 	font-size: 12px;
 	line-height: 0;
 	margin-left: 5px;
-}
-
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-	/* color: #0d47a1; */
 }
 
 .navbar .dropdown ul {
@@ -219,7 +274,7 @@ h6 {
 @media screen and (min-width: 992px) {
 	.navbar .contact-link {
 		color: white !important;
-		
+
 		background: linear-gradient(90deg, #3f51b5, #1a237e);
 		border-radius: 8px;
 		padding: 8px 15px;
@@ -306,15 +361,15 @@ h6 {
 	color: #0d47a1;
 }
 
-.navbar-mobile li>a{
-	color: black !important;	
+.navbar-mobile li>a {
+	color: black !important;
 }
 
-.navbar-mobile li>a:hover{
-	color: blue !important;	
+.navbar-mobile li>a:hover {
+	color: blue !important;
 }
 
-.navbar-mobile li .main-link:after{
+.navbar-mobile li .main-link:after {
 	height: 0 !important;
 }
 
@@ -358,7 +413,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section - Backkground Images
 --------------------------------------------------------------*/
 
 .home-bg {
@@ -396,8 +451,8 @@ h6 {
 		url("../images/contact-us/hello-on-phone.jpg");
 }
 
-.contact-us-bar-bg{
-	
+.contact-us-bar-bg {
+
 	background: linear-gradient(90deg, #3f51b5, #1a237e);
 	color: white;
 }
@@ -480,30 +535,30 @@ section {
 	margin-bottom: 0;
 }
 
-.my-btn{
-	background: linear-gradient(90deg, #f44336, #b71c1c);
-	font-weight: 600;
-	font-size: large;
-	padding: 8px 10px;
-	border-radius: 8px;
-	outline: none;
+/*--------------------------------------------------------------
+# Home
+--------------------------------------------------------------*/
+
+.home-page .service {
+	position: relative;
+	overflow: hidden;
+	/* margin: 0; */
+	transition: all 0.3s ease-in-out;
+	border-radius: 10px;
+	/* margin: 20px 0; */
+	padding: 5px;
 }
 
-.my-btn:hover{
-	background: none;
-	background-color: #d32f2f;
-	/* border: 1px solid; */
+.home-page .service img {
+	max-width: 100%;
+	width: 100%;
 }
 
-.my-btn:focus{
-	/* outline: none; */
+.home-page .service .description {
+	/* margin: 20px; */
+	padding: 20px;
+	font-size: 18px;
 }
-
-my-btn:active{
-	background-color: #d32f2f;
-	border: 1px solid;
-}
-
 
 /*--------------------------------------------------------------
 # About
@@ -545,7 +600,24 @@ my-btn:active{
 	margin-bottom: 0;
 }
 
+#guiding-lights .cards {
+	margin: auto;
+	width: 75%;
+}
 
+.who-we-are p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+i {
+	color: #0d47a1;
+}
+
+.why-choose-us .cards {
+	margin: auto;
+	width: 75%;
+}
 
 /*--------------------------------------------------------------
 # Cards
@@ -563,8 +635,6 @@ my-btn:active{
 	/* border-bottom: 3px solid #fff; */
 	padding-bottom: 20px;
 }
-
-
 
 .cards .icon-img {
 	height: 300px;
@@ -611,16 +681,51 @@ ul {
 	padding: 0;
 }
 
-
 .solution-text ul {
 	list-style: inside;
+}
+
+.horizontal-card img {
+	margin: auto;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.horizontal-card {
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+	padding: 20px 0;
+}
+
+.horizontal-card .description {
+	line-height: 1.8;
+}
+
+.icon i {
+	margin: 50px;
+	padding: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.horizontal-card img {
+		margin-top: 10px;
+	}
+
+	.horizontal-card {
+		padding: 0 !important;
+	}
+
+	.horizontal-card .description {
+		text-align: center;
+		margin-top: 20px;
+		padding: 15px;
+	}
 }
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team {
-	/* background: url("../img/team-bg.jpg") center center no-repeat; */
 	background-size: cover;
 	padding: 60px 0;
 	position: relative;
@@ -633,7 +738,6 @@ ul {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	/* background: rgba(255, 255, 255, 0.75); */
 	z-index: 9;
 }
 
@@ -642,7 +746,7 @@ ul {
 	z-index: 10;
 }
 
-.team img{
+.team img {
 	width: 100%;
 }
 
@@ -651,33 +755,40 @@ ul {
 	margin-bottom: 80px;
 	position: relative;
 	width: 100%;
+	
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	filter: grayscale(0%);
+}
+
+.team .member:hover {
+	/* filter: grayscale(100%); */
 }
 
 .team .member .pic {
 	width: 100%;
-	height: 500px;
+	height: 250px;
 	object-fit: cover;
 	overflow: hidden;
+	z-index: 2000;
+	transition: all 0.2s ease;
 }
+
+.team .member .pic:hover {	
+}
+
+
 
 .team .member .member-info {
-	position: absolute;
-	top: 85%;
-	left: 20px;
-	right: 20px;
-	background: #fff;
-	padding: 20px 0;
+	/* position: absolute; */
+	padding: 20px 10px;
 	color: #364146;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-	max-height: 95px;
-	overflow: hidden;
-	transition: max-height 0.5s ease-in-out;
+	/* max-height: 150px; */
+	/* overflow: hidden; */
+	/* transition: max-height 0.5s ease-in-out; */
 }
-
-/* For hover effect */
-/* .team .member:hover .member-info {
-	max-height: 300px;
-} */
 
 .team .member h4 {
 	font-weight: 700;
@@ -727,6 +838,16 @@ ul {
 	.team .member {
 		margin-bottom: 110px;
 	}
+
+	.team .member .pic {
+		height: 400px;
+	}
+}
+
+#member-details-modal {
+	visibility: hidden;
+	position: absolute;
+	top: 100px;
 }
 
 /*--------------------------------------------------------------
@@ -745,15 +866,10 @@ ul {
 	word-wrap: break-word;
 }
 
-.contact .info .text{
+.contact .info .text {
 	font-size: 18px;
 	color: black;
 	font-weight: 300;
-}
-
-.contact .tally-form{
-	/* margin: auto; */
-
 }
 
 .contact .info i {
@@ -785,6 +901,11 @@ ul {
 	color: #627680;
 }
 
+.contact-us-text {
+	font-size: 18px;
+	padding: 10px;
+}
+
 @keyframes animate-loading {
 	0% {
 		transform: rotate(0deg);
@@ -795,150 +916,34 @@ ul {
 	}
 }
 
+@media (max-width: 991px) {
+	#contact .container {
+		padding: 30px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {
 	background-color: #263238;
 	color: white;
-	padding: 50px;
+	padding: 20px 50px;
 }
 
-.footer .footer-link{
+.footer .footer-link {
 	color: white;
-	margin-bottom:5px;
+	margin-bottom: 5px;
 	display: block;
 	/* transition: font-weight 0.5s ease; */
 }
 
-
-.footer .footer-link:hover{
+.footer .footer-link:hover {
 	font-weight: 520;
 }
 
-.intro-text {
-	padding: 0 10px;
-	font-size: 20px;
-	font-style: italic;
-}
-
-.about h1 {
-	font-weight: 600;
-}
-
-.about h3 {
-	font-weight: 600;
-}
-
-.about img {
-	height: 200px;
-}
-
-.solutions {
-	margin-top: 60px;
-}
-
 @media screen and (min-width: 990px) {
-	.solutions .container{
+	.solutions .container {
 		padding: 60px;
-	}
-}
-
-/* Contact Us Page */
-.contact-us-text {
-	font-size: 18px;
-	padding: 10px;
-}
-
-.why-choose-us .cards {
-	margin: auto;
-	width: 75%;
-}
-
-.icon i {
-	margin: 50px;
-	padding: 20px;
-}
-
-.service {
-	position: relative;
-	overflow: hidden;
-	/* margin: 0; */
-	transition: all 0.3s ease-in-out;
-	border-radius: 10px;
-	/* margin: 20px 0; */
-	padding: 5px;
-}
-
-.service img {
-	max-width: 100%;
-	width: 100%;
-}
-
-.service .description {
-	/* margin: 20px; */
-	padding: 20px;
-	font-size: 18px;
-}
-
-#guiding-lights .cards {
-	margin: auto;
-	width: 75%;
-}
-
-.who-we-are p {
-	font-size: 18px;
-	font-weight: 400;
-}
-
-i {
-	color: #0d47a1;
-}
-
-.horizontal-card img {
-	margin: auto;
-	width: 100%;
-	height: auto;
-	border-radius: 10px;
-}
-
-.horizontal-card {
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-	padding: 20px 0;
-}
-
-.horizontal-card .description {
-	line-height: 1.8;
-}
-
-@media screen and (max-width: 991px) {
-	.horizontal-card img{
-		margin-top: 10px;
-	}
-
-	.horizontal-card {
-		padding: 0 !important;
-	}
-
-	.horizontal-card .description {
-		text-align: center;
-		margin-top: 20px;
-		padding: 15px;
-	}
-}
-
-.page-title {
-	font-weight: 600;
-}
-
-.solution {
-	margin: 40px 0;
-	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-	padding: 20px;
-}
-
-@media (max-width: 991px) {
-	#contact .container {
-		padding: 30px;
 	}
 }

@@ -90,8 +90,8 @@ function ContactUs() {
                                 <div className="col-lg-10 col-md-10 col-sm-12 p-4">
                                     {loading ? spinner() :
                                         <div>
-                                            <h5 className='my-4'>We would love to hear from you. Fill out the form below.</h5>
-                                            {/* <p className='mb-4'>Glad you liked our services. We would love to hear from you!</p> */}
+                                            {/* <h5 className='my-4'>We would love to hear from you. Fill out the form below.</h5>
+                                            <p className='mb-4'>Glad you liked our services. We would love to hear from you!</p> */}
                                         </div>
                                     }
                                     <iframe

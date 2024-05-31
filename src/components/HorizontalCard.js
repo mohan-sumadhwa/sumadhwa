@@ -6,7 +6,7 @@ function HorizontalCard({title, imgSrc, description}){
             <div className='col-lg-11 col-md-10 col-sm-12'>
                 <div className='row horizontal-card d-flex align-items-stretch justify-content-center mb-3'>
                     <div className='col-lg-6 col-md-12 col-sm-12'>
-                        <img className='img-fluid' src={imgSrc}/>
+                        <img className='img-fluid' src={imgSrc} alt='Card Element Picture'/>
                     </div>
                     <div className='col-lg-6 col-md-12 col-sm-12 mt-3 px-4 description'>
                         <h2 className='mb-4'>{title}</h2>
