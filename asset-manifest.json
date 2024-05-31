@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c6b82b6.css",
-    "main.js": "/static/js/main.ad0b562b.js",
-    "static/js/787.696d01e1.chunk.js": "/static/js/787.696d01e1.chunk.js",
+    "main.css": "/static/css/main.576d9ec2.css",
+    "main.js": "/static/js/main.a427a4d7.js",
+    "static/js/453.9a0a9551.chunk.js": "/static/js/453.9a0a9551.chunk.js",
     "static/media/manufacturing4.png": "/static/media/manufacturing4.0a6a242f7a364c237363.png",
     "static/media/money-cleaner.jpg": "/static/media/money-cleaner.8466815508669d91cbf2.jpg",
     "static/media/metal-machine.jpg": "/static/media/metal-machine.1827036ee207ab9c6c7a.jpg",
@@ -10,6 +10,7 @@
     "static/media/robot-machine.jpg": "/static/media/robot-machine.6636de7078b198b7cb86.jpg",
     "static/media/windmill.jpg": "/static/media/windmill.8f371ae965f6f608ae29.jpg",
     "static/media/port-supply-chain.jpg": "/static/media/port-supply-chain.9dc9dde0771b856e4952.jpg",
+    "static/media/precision-manufacturing.jpg": "/static/media/precision-manufacturing.2187cce6bf4135522c37.jpg",
     "static/media/planning.jpg": "/static/media/planning.864b54929e5cf9baf557.jpg",
     "static/media/industry-4.0.jpg": "/static/media/industry-4.0.54c7d5a04f575a3b96ae.jpg",
     "static/media/hello-on-phone.jpg": "/static/media/hello-on-phone.2dad8ae4ab0892815db2.jpg",
@@ -19,24 +20,24 @@
     "static/media/plant-in-hands.jpg": "/static/media/plant-in-hands.4139e1f6f884ace6ecda.jpg",
     "static/media/man-with-laptop.jpg": "/static/media/man-with-laptop.2914e989a551a2707516.jpg",
     "static/media/collaboration-free.jpg": "/static/media/collaboration-free.e1fd305e49d274be17f7.jpg",
-    "static/media/banaji.png": "/static/media/banaji.2bf666529a7d67f8ffa3.png",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.66b7720f4a230f1b0341.woff",
+    "static/media/Nagaraj Banaji.png": "/static/media/Nagaraj Banaji.2bf666529a7d67f8ffa3.png",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/tech-partnership-free.jpg": "/static/media/tech-partnership-free.a36c53390848357ad001.jpg",
     "static/media/people-centric-free.webp": "/static/media/people-centric-free.105a1334d90da969dc63.webp",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.64ed46b247405068ca60.woff2",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/data-driven-free.jpg": "/static/media/data-driven-free.03c0708f481de71cd220.jpg",
-    "static/media/mohan.jpg": "/static/media/mohan.2c6d49ca43dac158ec7a.jpg",
-    "static/media/kemkar.jpg": "/static/media/kemkar.16a45ce4014e7da354e2.jpg",
-    "static/media/suresh.jpg": "/static/media/suresh.a3669f69090ed2774990.jpg",
-    "static/media/venu.jpg": "/static/media/venu.b7f242f3e811077ea805.jpg",
-    "static/media/srinivas.png": "/static/media/srinivas.ff79450696b07757ed7e.png",
+    "static/media/Mohan K V.jpg": "/static/media/Mohan K V.2c6d49ca43dac158ec7a.jpg",
+    "static/media/P C Kemkar.jpg": "/static/media/P C Kemkar.16a45ce4014e7da354e2.jpg",
+    "static/media/Suresh Katti.jpg": "/static/media/Suresh Katti.a3669f69090ed2774990.jpg",
+    "static/media/Venu B V.jpg": "/static/media/Venu B V.b7f242f3e811077ea805.jpg",
+    "static/media/Srinivas N.png": "/static/media/Srinivas N.ff79450696b07757ed7e.png",
     "index.html": "/index.html",
-    "main.6c6b82b6.css.map": "/static/css/main.6c6b82b6.css.map",
-    "main.ad0b562b.js.map": "/static/js/main.ad0b562b.js.map",
-    "787.696d01e1.chunk.js.map": "/static/js/787.696d01e1.chunk.js.map"
+    "main.576d9ec2.css.map": "/static/css/main.576d9ec2.css.map",
+    "main.a427a4d7.js.map": "/static/js/main.a427a4d7.js.map",
+    "453.9a0a9551.chunk.js.map": "/static/js/453.9a0a9551.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c6b82b6.css",
-    "static/js/main.ad0b562b.js"
+    "static/css/main.576d9ec2.css",
+    "static/js/main.a427a4d7.js"
   ]
 }
