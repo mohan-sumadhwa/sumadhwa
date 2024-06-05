@@ -1,17 +1,14 @@
 import React from "react"
 import Header from "../Header";
 import Card from "../Card";
-
 import '../../styles/style.css';
 import moneyCleanerImg from '../../images/services/money-cleaner.jpg';
 import supplyChainImg from '../../images/services/port-supply-chain.jpg';
 import metalMachineImg from '../../images/services/metal-machine.jpg';
 import qmsImg from '../../images/services/qms.jpg';
 import optimizationImg from '../../images/services/optimization.jpeg'
-
 import sixSigmaImg from '../../images/services/six-sigma.png';
 import Footer from "../Footer";
-
 
 const ProcessOptimization = () => {
 

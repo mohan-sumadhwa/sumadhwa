@@ -40,7 +40,7 @@ function ContactUs() {
 					</div>
                 </div>
             </section>
-            <section id="contact" className="contact  grey-bg ">
+            <section id="contact" className="contact">
                 <div className="">
                     {/* <h1 className="mb-3 page-title">Contact Us</h1> */}
                     {/* <div className="row mb-5 contact-us-text">

@@ -70,7 +70,7 @@ function About() {
                     <div className="container">
                         <div className="cards">
                             <div className="row center">
-                                <div className="col d-flex flex-column justify-contents-center">
+                                <div className="col d-flex flex-column ">
                                     <div className="content pt-4 pt-lg-0">
                                         <div className="section-title">
                                             <h4 className="mb-4">Our Guiding Lights</h4>
@@ -79,7 +79,7 @@ function About() {
                                             </h1>
                                             <p></p>
                                         </div>
-                                        <div className="row">
+                                        <div className="row justify-content-center">
                                             <Card
                                                 iconClass="fa-solid fa-bullseye"
                                                 title="Mission"

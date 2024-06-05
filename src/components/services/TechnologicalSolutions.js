@@ -3,12 +3,7 @@ import Header from "../Header";
 import Card from "../Card";
 
 import '../../styles/style.css';
-import moneyCleanerImg from '../../images/services/money-cleaner.jpg';
-import supplyChainImg from '../../images/services/port-supply-chain.jpg';
-import metalMachineImg from '../../images/services/metal-machine.jpg';
-import qmsImg from '../../images/services/qms.jpg';
 import industry4Img from '../../images/services/industry-4.0.jpg'
-
 import planningImg from '../../images/services/planning.jpg';
 import measurementImg from '../../images/services/precision-manufacturing.jpg';
 import Footer from "../Footer";
@@ -50,10 +45,9 @@ const TechnologicalSolutions = () => {
                 <div className="container">
                     <div className="cards">
                         <div className="row center">
-                            <div className="col d-flex flex-column justify-contents-center">
+                            <div className="col d-flex flex-column justify-content-center">
                                 <div className="content pt-4 pt-lg-0">
                                     <div className="section-title">
-                                        {/* <h4 className="mb-4">Our Offerings</h4> */}
                                         <h1>
                                             Our offerings
                                         </h1>
@@ -62,7 +56,6 @@ const TechnologicalSolutions = () => {
                                     <div className="row">
                                         <Card
                                             imgSrc={industry4Img}
-                                            // iconClass="fa-solid fa-handshake"
                                             title="Industry 4.0"
                                             description="
                                             We help in integrating Industry 4.0 technologies, such as IoT, Robotics, AGVs, to automate and enhance manufacturing processes and implementing smart manufacturing solutions for real-time monitoring and control

@@ -6,10 +6,12 @@ import {Routes, Route} from 'react-router-dom';
 import ProcessOptimization from './components/services/ProcessOptimization';
 import TechnologicalSolutions from './components/services/TechnologicalSolutions';
 import Sustainability from './components/services/Sustainability';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div>
+
       <Routes>
         <Route exact path='/' element={<Home />}></Route>        
         <Route path='/about' element={<About/>}></Route>
@@ -18,6 +20,7 @@ function App() {
         <Route path='/services/sustainability' element={<Sustainability />}></Route>
         <Route path='/contact' element={<ContactUs />}></Route>
       </Routes>
+      <ScrollToTop />
     </div>
       
   );

@@ -55,8 +55,6 @@ function Header({ active }) {
 			<div className="container d-flex align-items-center">
 
 				<div className="row logo me-auto">
-					{/* <!-- <h1><a href="index.html">Scaffold</a></h1> --> */}
-					{/* <!-- Uncomment below if you prefer to use an image logo --> */}
 					<Link to='/'>
 						<div className="">
 							<div className='logo-img inline-block p-2'>

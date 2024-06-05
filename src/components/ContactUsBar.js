@@ -1,12 +1,9 @@
 import React from "react"
-import { Link } from 'react-router-dom';
 import MyButton from "./MyButton";
 
 const ContactUsBar = () => {
     return (
-        <div>
-            
-            
+        <div>            
             <section id="contact-us-bar" className="contact-us-bar-bg">
                 <div className="container">
                     <div className="row align-items-center">

@@ -1,15 +1,10 @@
 import React from "react"
 import Header from "../Header";
 import Card from "../Card";
-
 import '../../styles/style.css';
 import windmillImg from '../../images/services/windmill.jpg'
-
 import solarPanelsImg from '../../images/services/solar-panels.jpg'
-
 import ehsImg from '../../images/services/ehs.jpeg'
-
-import plantInHandsImg from '../../images/services/plant-in-hands.jpg';
 import Footer from "../Footer";
 
 const Sustainability = () => {
