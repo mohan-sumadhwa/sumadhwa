@@ -33,8 +33,8 @@ const Sustainability = () => {
                 <div className="container">
                     <h2 className="mb-4">Why sustainability? </h2>
                     <p>
-                    Sustainability isn't a choice but a cornerstone for manufacturing firms. Today, 93% of CEOs view it as vital for future success (World Economic Forum). McKinsey reports that sustainable-focused companies outperform peers financially, with higher margins and stock returns. Beyond profits, sustainability boosts brand reputation, attracts talent, and fuels innovation. It's not just about ethics; it's about securing a competitive edge.
-                    </p>
+
+                    Sustainability isn't a choice but a cornerstone for manufacturing firms. Sustainability-focused companies outperform peers financially, with higher margins and stock returns. Beyond profits, sustainability boosts brand reputation, attracts talent, and fuels innovation. Embracing sustainability ensures long-term viability and resilience in a rapidly changing world. . It's not just about ethics; it's about securing a competitive edge.        </p>
                 </div>
 
             </section>

@@ -66,7 +66,7 @@ function ContactUs() {
                                     <i className="fa-solid fa-envelope"></i>
                                     <h4>Email</h4>
                                     <p className='text'>
-                                        info@sumadhwaconsultants.com <br />
+                                        <a href='mailto:info@sumadhwaconsultants.com'>info@sumadhwaconsultants.com</a> <br />
                                     </p>
                                 </div>
                                 <hr/>
@@ -75,8 +75,8 @@ function ContactUs() {
                                     <i className="fa-solid fa-phone"></i>
                                     <h4>Phone</h4>
                                     <p className='text'>
-                                        98801 01449 <br />
-                                        98450 06706
+                                        <a href='tel:+919880101449'>98801 01449</a> <br />
+                                        <a href='tel:+919845006706'>98450 06706</a>
                                     </p>
                                 </div>
                                 {/* <hr/> */}

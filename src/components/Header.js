@@ -34,14 +34,6 @@ function Header({ active }) {
 			this.classList.toggle('bi-list')
 			this.classList.toggle('bi-x')
 		  })
-		
-		on('click', '.navbar .dropdown > a', function (e) {
-			// alert("Clicked on dropdown");
-			if (select('#navbar').classList.contains('navbar-mobile')) {
-				e.preventDefault()	
-				this.nextElementSibling.classList.toggle('dropdown-active')
-			}
-		}, true);
 	});
 
 
@@ -49,6 +41,12 @@ function Header({ active }) {
 		setShowNavbar(!showNavbar);
 	}
 
+	const toggleMobileDropdown = (e, element) => {
+		if (select('#navbar').classList.contains('navbar-mobile')) {
+			e.preventDefault()
+			element.querySelector('.dropdown-list').classList.toggle('dropdown-active')
+		}
+	}
 
 	return (
 		<header id="header" className="fixed-top d-flex align-items-center">
@@ -79,9 +77,9 @@ function Header({ active }) {
 						<li><Link className={"nav-link main-link scrollto " + (active === "about" ? "active" : "")} to="/about">About Us</Link></li>
 
 						<li>
-							<li className="dropdown">
-								<Link to="/#" className={"nav-link main-link scrollto " + (active === "services" ? "active" : "")}><span>Services</span> <i className="bi bi-chevron-down"></i></Link>
-								<ul>
+							<li className="dropdown" onClick={(e) => toggleMobileDropdown(e, e.currentTarget)}>
+								<Link className={"nav-link main-link scrollto " + (active === "services" ? "active" : "")}><span>Services</span> <i className="bi bi-chevron-down"></i></Link>
+								<ul className='dropdown-list'>
 									<li>
 										<Link className={"nav-link scrollto dropdown-link" + (active === "about" ? "active" : "")} to="/services/process-optimization">Process Optimization</Link>
 									</li>

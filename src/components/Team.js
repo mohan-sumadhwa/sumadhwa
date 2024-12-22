@@ -57,7 +57,6 @@ function Team() {
     }
     const handleShow = (member) => {
         setSelectedMember(member);
-        console.log(member.specializations.split(","))
         setShow(true);
     };
 
@@ -77,7 +76,8 @@ function Team() {
                             members.map(member => {
                                 return (
                                     <div className="col-lg-3 col-md-6 col-sm-12 d-flex"
-                                        onClick={() => handleShow(member)}>
+                                        onClick={() => handleShow(member)}
+                                        key={member.name}>
                                         <div className="member">
                                             <div className="pic">
                                                 <img
